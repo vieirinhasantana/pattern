@@ -37,4 +37,12 @@ No exemplo foi aplicado para que o usuário altere a forma de pagamento(Boleto, 
 ```
 https://github.com/vieirinhasantana/pattern.git
 ```
+2- Abra o projeto utilizando 
+```
+Ctrl + Shift + O
+```
+3- Após abrir o projeto va na classe Trab.java; Aqui está o main do projeto basta roda e criar combinações como preferir;
 
+### LICENCE
+MIT
+Daniel Vieira Santana
