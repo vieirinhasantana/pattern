@@ -41,7 +41,8 @@ https://github.com/vieirinhasantana/pattern.git
 ```
 Ctrl + Shift + O
 ```
-3- Após abrir o projeto va na classe Trab.java; Aqui está o main do projeto basta roda e criar combinações como preferir;
+3- Após abrir o projeto va na classe Trab.java; 
+Aqui está o main do projeto basta roda e criar combinações como preferir;
 
 ### LICENCE
 MIT
