@@ -2,7 +2,7 @@
 
 Este exemplo foi desenvolvido para fins de estudo e aprendizado sobre Design Patter. 
 Para desenvolvimento deste exemplo foi utilizado 4 pattern, foram eles PROXY, COMPOSITE, STRATEGY, CHAIN  OF RESPONSABILITY.
-Abaixo encontra-se uma preve descrição de onde foi utilizado os Pattern descritos acima.
+Abaixo encontra-se uma breve descrição de onde foi utilizado os Pattern descritos acima.
 
 ## Chekout
 O sistema de checkou é a parte que fica após selecionar os itens para o "carrinho" de compras, onde você visualiza o resumo dos itens que selecionou, coloca a quantidade e em seguida efetuar o pagamento através dos meios existentes. (Boleto, Cartão Crédito, Cartão de Debito, Cartão da Loja).
