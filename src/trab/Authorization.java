@@ -10,29 +10,30 @@ package trab;
  * @author daniel.vieira
  */
 public class Authorization implements Cart {
-    
-    private MeioPagamento meioPagamento;
     private User user;
+    private Boolean status;
     
     public void Authorization(User user){
         this.user = user;
     }
     
     @Override
-    public void meioPagamento() {
-        
-        Buscador mongo = new Mongo(new Nulo());
-        Buscador redis = new Redis(mongo);
-        Buscador memcache = new MemCache(redis);
-        memcache.buscarEmCadeia();
-
-        
-        /*if(user.getEmail().equalsIgnoreCase("daniel.vieira") && user.getPassword().equalsIgnoreCase("teste123")){
-            meioPagamento = new MeioPagamento();
-            meioPagamento.meioPagamento();
+    public Boolean buscarUsuario() {
+        if(user.getEmail().equalsIgnoreCase("admin") && user.getPassword().equalsIgnoreCase("teste123")){
+            Buscador mongo = new Mongo(new Nulo());
+            Buscador redis = new Redis(mongo);
+            Buscador memcache = new MemCache(redis);
+            memcache.buscarEmCadeia();
+            this.status = true;
         }
         else {
             System.out.println("Credenciais inválidas! Tente novamente.");
-        }*/
+            this.status = false;
+        }
+        return status;
+    }
+    
+    public Boolean getStatusAuth () {
+        return this.status;
     }
 }

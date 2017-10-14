@@ -12,12 +12,7 @@ public abstract class Buscador {
         Boolean encontrado = buscar();
         if (!encontrado) {
             proximo.buscarEmCadeia();
-        }/*
-        else{
-            return encontrado;
         }
-        return null;*/
-        System.out.println(encontrado);
     }
 
     public abstract Boolean buscar();

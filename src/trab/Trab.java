@@ -9,10 +9,15 @@ public class Trab {
        Produto promocaoC      = new ProdutoComposto(liquidificador, kitPanela);
        Produto promocaoD      = new ProdutoComposto(liquidificador, promocaoC);
   
-       User user = new User("daniel.vieira", "testasdadsae123");
+       User user = new User("admin", "teste123"); //usuario: admin senha: teste123
        Authorization auth = new Authorization();
        auth.Authorization(user);
-       auth.meioPagamento();
-      
+       auth.buscarUsuario();
+       if (auth.getStatusAuth()) {
+           Pagamento pagamento = new Pagamento();
+           pagamento.setModoPagamento(new Boleto());
+           System.out.println("\n\n\n\nFoi comprado o " +  promocaoA.getNome() + ", com um total de R$ " + promocaoA.getPreco() + ", pago através do ");
+           pagamento.pagar();
+       }
     }
 }

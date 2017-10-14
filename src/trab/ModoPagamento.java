@@ -7,12 +7,10 @@ package trab;
 
 /**
  *
- * @author daniel.vieira
+ * @author Daniel Vieira
  */
-public class MeioPagamento implements Cart{
-
-    @Override
-    public void meioPagamento() {
-        System.out.println("Vamos para proxima etapa");
-    }   
+public interface ModoPagamento {
+    
+    public void pagamento ();
+    
 }
